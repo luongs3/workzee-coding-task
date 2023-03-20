@@ -1,0 +1,38 @@
+{
+  "questions": [
+    {
+      "key": "question-1",
+      "questionText": "do you married",
+      "descriptionText": "single/married",
+      "initialValue": "single",
+      "type": "radio",
+      "answers": [
+        {
+          "id": 1,
+          "label": "single",
+          "value": "single"
+        },
+        {
+          "id": 2,
+          "label": "married",
+          "value": "married"
+        }
+      ]
+    },
+    {
+      "key": "question-2",
+      "questionText": "what is your husband/wife's name",
+      "type": "plaintext",
+      "preConditionValue": "married",
+      "answerComponent": {
+        "type": "custom-1"
+      }
+    },
+    {
+      "key": "question-3",
+      "questionText": "describe yourself",
+      "type": "plaintext",
+      "isValid": "notEmpty"
+    }
+  ]
+}
